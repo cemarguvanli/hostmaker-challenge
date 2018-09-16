@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 
 import 'sanitize.css/sanitize.css';
 
@@ -10,12 +11,13 @@ import App from './App';
 import './common/styles/global-styles.scss';
 
 const MOUNT_NODE = document.getElementById('app');
+const history = createHistory();
 
 const render = () => {
   ReactDOM.render(
-    <Router>
+    <HashRouter history={history}>
       <App />
-    </Router>,
+    </HashRouter>,
     MOUNT_NODE
   );
 };
