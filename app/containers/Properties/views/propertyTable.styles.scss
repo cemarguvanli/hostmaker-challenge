@@ -1,0 +1,19 @@
+.tableWrapper {
+  background-color: white;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.table {
+  width: 100%;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  border: 1px solid #ddd;
+  padding: 16px;
+  line-height: 1.42857143;
+  text-align: left;
+  vertical-align: top;
+}

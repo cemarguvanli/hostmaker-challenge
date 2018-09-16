@@ -1,0 +1,35 @@
+.header {
+  height: 64px;
+  border-bottom: 1px solid rgba(46, 62, 72, .12);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      padding: 0 16px;
+      &:last-of-type {
+        padding-right: 0;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        transition: color .2s ease-in;
+        &:hover {
+          opacity: .5;;
+        }
+        &.active {
+          color: #58c4c6
+        }
+      }
+    }
+  }
+}

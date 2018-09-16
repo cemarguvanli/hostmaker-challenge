@@ -1,0 +1,31 @@
+.propertiesPage {
+  padding-bottom: 32px;
+}
+
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  min-height: 200px;
+  color: #fff;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url(https://hostmaker-website.imgix.net/assets/images/services/hero/investors.jpg);
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 0px 8px 24px;
+    margin: 0;
+  }
+  p {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+}
