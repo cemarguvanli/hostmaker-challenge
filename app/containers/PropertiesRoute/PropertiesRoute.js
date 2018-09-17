@@ -92,7 +92,7 @@ class PropertiesRoute extends React.Component {
     } = this.state;
 
     if (loading) return <LoadingIndicator />;
-    console.log(radius);
+
     return (
       <div className={styles.propertiesRoutePage}>
         <div className={styles.playground}>

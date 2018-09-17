@@ -28,7 +28,6 @@ const MapWrapper = withScriptjs(
         zoom={zoom}
         defaultCenter={center}
       >
-        {console.log(radius, zoom, 'radius')}
         <Circle
           radius={radius * 1000}
           defaultCenter={center}
