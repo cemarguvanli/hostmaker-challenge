@@ -20,11 +20,11 @@ const fetchPropertiesRoute = async (data) => {
   const solvedResults = await Promise.all(promises);
 
   return solvedResults.map((res) => {
-    const { results: [item] } = res;
+    const { results: [result] } = res;
 
-    const position = item.geometry.location;
-    const address = item.formatted_address;
-    const placeId = item.place_id;
+    const position = result.geometry.location;
+    const address = result.formatted_address;
+    const placeId = result.place_id;
 
     return {
       showInfo: false,
