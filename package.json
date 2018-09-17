@@ -27,6 +27,7 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "prop-types": "15.6.1",
