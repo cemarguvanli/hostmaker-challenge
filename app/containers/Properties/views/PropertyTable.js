@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { ucfirst } from 'common/utils/';
+import { upperFirst } from 'lodash';
 
 import styles from './propertyTable.styles.scss';
 
@@ -14,7 +13,7 @@ class PropertyTable extends React.PureComponent {
 
   rowRenderer = (property, index) => (
     <tr key={index}>
-      <td>{ucfirst(property.owner)}</td>
+      <td>{upperFirst(property.owner)}</td>
       <td>{this.addressRenderer(property.address)}</td>
       <td>£{property.incomeGenerated}</td>
     </tr>
