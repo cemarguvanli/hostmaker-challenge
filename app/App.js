@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Header from 'components/Header';
 
 import Routes from './routes';
 
 const App = () => (
-  <div>
+  <Fragment>
     <Header />
-    <div>
-      { Routes }
-    </div>
-  </div>
+    { Routes }
+  </Fragment>
 );
 
 export default App;
