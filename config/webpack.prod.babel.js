@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PostCSSImport = require('postcss-import');
+const PostCSSNext = require('postcss-cssnext');
+const CSSNano = require('cssnano');
 
 module.exports = require('./webpack.base.babel')({
   mode: 'production',
@@ -45,9 +48,9 @@ module.exports = require('./webpack.base.babel')({
                 },
                 ident: 'postcss',
                 plugins: (loader) => [
-                  require('postcss-import')({ root: loader.resourcePath }),
-                  require('postcss-cssnext')(),
-                  require('cssnano')()
+                  PostCSSImport({ root: loader.resourcePath }),
+                  PostCSSNext(),
+                  CSSNano()
                 ]
               }
             },
