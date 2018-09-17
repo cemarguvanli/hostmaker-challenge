@@ -3,7 +3,7 @@
 1. Clone this repo using
 2. Move to the appropriate directory: `cd hostmaker-challenge`.<br />
 3. Run `yarn` or `npm install` to install dependencies.<br />
-4. Run `npm start` to see the app at `http://localhost:3000`.<br />
+4. Run `npm start` to see the app at `http://localhost:8081`.<br />
 5. Run `npm run build` to get production build.
 6. Run `npm run start:production` to see how it looks like on production.
 
