@@ -3,6 +3,7 @@
     "extends": ["airbnb", "plugin:react/recommended"],
     "env": {
       "browser": true,
+      "commonjs": true,
       "node": true,
       "jest": true,
       "es6": true
