@@ -14,5 +14,6 @@
 - _Webpack_ - **Webpack 4**, Hot Reloading, Code Splitting, Optimized Prod Build
 - _Test_ - Jest with Enzyme
 - _Lint_ - ESlint
-- _Styles_ - SCSS Styling
+- _Styles_ - SCSS Styling, CSS Modules
+
 
