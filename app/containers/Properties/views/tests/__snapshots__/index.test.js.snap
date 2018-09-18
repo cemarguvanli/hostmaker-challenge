@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PropertyTable /> renders correctly 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Owner
+        </th>
+        <th>
+          Address
+        </th>
+        <th>
+          IncomeGenerated
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Carlos
+        </td>
+        <td>
+          <p>
+            Flat 5
+          </p>
+          <p>
+            7 Westbourne Terrace
+          </p>
+          <p>
+            W2 3UL
+          </p>
+          <p>
+            London
+          </p>
+          <p>
+            U.K.
+          </p>
+        </td>
+        <td>
+          £
+          2000.34
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ankur
+        </td>
+        <td>
+          <p>
+            4
+          </p>
+          <p>
+            Tower Mansions
+          </p>
+          <p>
+            Off Station road
+          </p>
+          <p>
+            86-87 Grange Road
+          </p>
+          <p>
+            SE1 3BW
+          </p>
+          <p>
+            London
+          </p>
+          <p>
+            U.K.
+          </p>
+        </td>
+        <td>
+          £
+          10000
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Elaine
+        </td>
+        <td>
+          <p>
+            4
+          </p>
+          <p>
+            332b
+          </p>
+          <p>
+            Goswell Road
+          </p>
+          <p>
+            EC1V 7LQ
+          </p>
+          <p>
+            London
+          </p>
+          <p>
+            U.K.
+          </p>
+        </td>
+        <td>
+          £
+          1200
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

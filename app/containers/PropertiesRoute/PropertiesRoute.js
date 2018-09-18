@@ -27,7 +27,9 @@ class PropertiesRoute extends React.Component {
 
   onMarkerClick = (index) => {
     this.setState((prevState) => {
-      const copyMarkers = [...prevState.markers];
+      const copyMarkers = [...prevState.markers]
+        .map((marker) => ({ ...marker, showInfo: false }));
+
       copyMarkers[index].showInfo = !copyMarkers[index].showInfo;
 
       return {
