@@ -9,6 +9,12 @@
   left: 10px;
   top: 70px;
 
+  @media (max-width: 768px) {
+    top: auto;
+    bottom: 32px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
   p {
     padding: 8px 37px;
     font-size: 12px;
@@ -17,6 +23,7 @@
   .buttons {
     display: flex;
     justify-content: space-evenly;
+
     button {
       background: #ececec;
       width: 50%;

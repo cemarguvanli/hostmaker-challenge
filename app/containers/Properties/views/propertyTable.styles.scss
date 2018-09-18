@@ -6,14 +6,28 @@
 
 .table {
   width: 100%;
-}
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
-  border: 1px solid #ddd;
-  padding: 16px;
-  line-height: 1.42857143;
-  text-align: left;
-  vertical-align: top;
+  table-layout: fixed;
+
+  tbody,
+  thead {
+    tr > td,
+    tr > th {
+      border: 1px solid #ddd;
+      padding: 16px;
+      line-height: 1.42857143;
+      text-align: left;
+      vertical-align: top;
+
+      @media (max-width: 468px) {
+        padding: 8px;
+        font-size: 12px;
+      }
+    }
+    tr > th {
+      min-width: 64px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }

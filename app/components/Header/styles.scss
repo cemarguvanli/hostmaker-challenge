@@ -10,6 +10,14 @@
   display: flex;
   justify-content: space-between;
 
+  .logo {
+    img {
+      @media (max-width: 468px) {
+        max-height: 28px;
+      }
+    }
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -23,6 +31,11 @@
         text-decoration: none;
         color: #333;
         transition: color .2s ease-in;
+
+        @media (max-width: 468px) {
+          font-size: 12px;
+        }
+
         &:hover {
           opacity: .5;;
         }
