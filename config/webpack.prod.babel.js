@@ -18,13 +18,6 @@ module.exports = require('./webpack.base.babel')({
 
   module: {
     rules: [
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     { loader: 'css-loader', options: { importLoaders: 1 } }
-      //   ]
-      // },
       {
         test: /\.(scss|css)$/,
         use: ExtractTextPlugin.extract({

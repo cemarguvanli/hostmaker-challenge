@@ -34,13 +34,6 @@ module.exports = (options) => ({
         type: 'javascript/dynamic', // only for webpack 4+
         use: [{ loader: 'json-import-loader' }, { loader: 'json-loader' }],
       },
-
-      // {
-      //   // Preprocess our own .scss files
-      //   test: /\.scss$/,
-      //   exclude: /node_modules/,
-      //   use: ['style-loader', 'css-loader', 'sass-loader']
-      // },
       {
         test: /\.(eot|svg|otf|ttf|woff|woff2)$/,
         use: 'file-loader'

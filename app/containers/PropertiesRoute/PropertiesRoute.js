@@ -77,7 +77,9 @@ class PropertiesRoute extends React.Component {
       if (operation === 'increase') {
         total = prevState.radius + 2;
       } else {
-        if (prevState.radius === 0) return {}; // maps can't accept minus.
+        if (prevState.radius === 0) {
+          return {}; // maps can't accept minus.
+        }
         total = prevState.radius - 2;
       }
 
@@ -93,7 +95,11 @@ class PropertiesRoute extends React.Component {
       markers, loading, centerLocation, radius, zoom
     } = this.state;
 
-    if (loading) return <LoadingIndicator />;
+    if (loading) {
+      return (
+        <LoadingIndicator />
+      );
+    }
 
     return (
       <div className={styles.propertiesRoutePage}>
