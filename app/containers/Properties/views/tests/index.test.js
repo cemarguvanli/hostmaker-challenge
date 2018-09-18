@@ -23,19 +23,4 @@ describe('<PropertyTable />', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-
-  // const rows = wrapper.find('.add-budget-table-row')
-  //     expect(rows.length).to.eql(2)
-
-  //     const firstRowColumns = rows.first().find('td').map(column => column.text())
-  //     expect(firstRowColumns.length).to.eql(4)// since you have 4 td
-  //     expect(firstRowColumns[0]).to.eql('BudgetCategoryName')
-  //     expect(firstRowColumns[1]).to.eql(20)
-  //     expect(firstRowColumns[2]).to.eql(someDate1)
-
-// const SecondRowColumns = rows.last().find('td').map(column => column.text())
-//       expect(firstRowColumns.length).to.eql(4)// since you have 4 td
-//       expect(firstRowColumns[0]).to.eql('BudgetCategoryName2')
-//       expect(firstRowColumns[1]).to.eql(30)
-//       expect(firstRowColumns[2]).to.eql(someDate2)
 });
